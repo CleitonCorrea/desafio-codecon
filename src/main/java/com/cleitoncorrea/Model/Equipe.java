@@ -1,7 +1,6 @@
 package com.cleitoncorrea.Model;
 
 import java.util.List;
-import java.util.UUID;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,18 +9,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-public class Usuario {
+public class Equipe {
     
-    private UUID id;
     private String nome;
-    private int idade;
-    private int score;
-    private boolean ativo;
-    private String pais;
-    private Equipe equipe;
-    private List<Log> logs;
+    private boolean lider;
+    private List<Projeto> projetos;
 }
